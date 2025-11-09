@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Barryvdh\DomPDF\Facade\Pdf; // ✅ ini yang benar, bukan PhpSpreadsheet
 
-class DaftarsuratController extends Controller
+class DaftarSuratController extends Controller
 {
     public function exportPdf(Request $request)
 {
