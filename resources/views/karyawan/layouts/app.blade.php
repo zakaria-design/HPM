@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HPM | @yield('title')</title>
 
+    @include('karyawan.layouts.script')
       <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 {{-- semua link --}}
@@ -32,7 +33,7 @@
 </div>
 
 <!-- jQuery -->
-    @include('karyawan.layouts.script')
+
 
     @livewireScripts
 
