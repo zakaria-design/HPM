@@ -4,13 +4,13 @@
     "functions": {
         "api/index.php": { "runtime": "vercel-php@0.6.2" }
     },
-    "routes": [
-        { "src": "/build/(.*)", "dest": "/public/build/" },
-        { "src": "/(.*)", "dest": "/api/index.php" }
-    ],
-    "public": true,
-    "buildCommand": "vite build",
-    "outputDirectory": "public",
+     "routes": [
+    { "src": "/(.*)\\.(css|js|jpg|jpeg|png|gif|svg|webp|ico|ttf|woff|woff2)", "dest": "/public/$1.$2" },
+    { "src": "/build/(.*)", "dest": "/public/build/$1" },
+    { "src": "/(.*)", "dest": "/api/index.php" }
+  ],
+  "buildCommand": "vite build",
+  "outputDirectory": "public",
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "false",
