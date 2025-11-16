@@ -1,23 +1,9 @@
 <div>
-    <div class="content-wrapper">
-        <section class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1 class="text-primary"><i class="fas fa-users"></i> @yield('title')</h1>
-                </div>
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="#"><i class="fas fa-user-tie"></i> Pimpinan</a></li>
-                    <li class="breadcrumb-item active"><i class="fas fa-users"></i> @yield('title')</li>
-                    </ol>
-                </div>
-                </div>
-            </div>
-        </section>
+    <div id="content-wrapper" class="mr-4 pl-4">
 
           <section class="content-header">
             <div>
+                <h3 class="mt-5 pt-4 pl-4 text-primary">Clients</h3>
                 <div class="d-flex justify-content-between mb-3">
                     <input wire:model.live="search" type="text" class="form-control w-25" placeholder="Cari Customer...">
                 </div>

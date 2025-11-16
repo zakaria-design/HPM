@@ -1,4 +1,4 @@
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+  {{-- <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -65,5 +65,27 @@
         </a>
       </li>
     </ul>
-  </nav>
+  </nav> --}}
   <!-- /.navbar -->
+
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm navbar-custom d-flex justify-content-between align-items-center px-3">
+
+            <!-- Desktop collapse button -->
+            <button class="btn btn-dark d-none d-md-inline" id="toggleSidebar">
+                <i class='bx bx-menu'></i>
+            </button>
+
+            <!-- Mobile sidebar toggle -->
+            <button class="btn btn-dark d-md-none" id="toggleMobileSidebar">
+                <i class='bx bx-menu'></i>
+            </button>
+
+            <div class="dropdown">
+                <img src="{{ Auth::user()->foto ? asset('foto_profil/' . Auth::user()->foto) : asset('avatar.jpg') }}" class="navbar-photo dropdown-toggle" data-bs-toggle="dropdown">
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><button class="dropdown-item">Profile</button></li>
+                    <li><button class="dropdown-item text-danger">Logout</button></li>
+                </ul>
+            </div>
+        </nav>

@@ -1,49 +1,11 @@
 <div>
 
     
-    <div class="content-wrapper">
-        <section class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1 class="text-primary"><i class="fas fa-mail-bulk"></i> @yield('title')</h1>
-                </div>
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="#"><i class="fas fa-user-tie"></i> Pimpinan</a></li>
-                    <li class="breadcrumb-item active"><i class="fas fa-mail-bulk"></i> @yield('title')</li>
-                    </ol>
-                </div>
-                </div>
-            </div>
-        </section>
-
+    <div id="content-wrapper">
 
         <section class="content">
         <div>
-      <!-- Default box -->
-      <div>
-        <div>
-            <div class="d-flex justify-content-end">
-                <div class="btn-group dropleft">
-                    <button type="button" class="btn btn-sm btn-warning dropdown-toggle mb-4" data-toggle="dropdown" aria-expanded="false">
-                      <i class="fas fa-print mr-1"></i>  Cetak
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item text-success" href="#"><i class="fas fa-file-excel mr-1"></i> Excel</a>
-                        <a class="dropdown-item text-danger" href="{{ route('daftarsurat.exportPdf', [
-                                'search' => $search ?? '',
-                                'kategori' => $kategori ?? 'semua',
-                                'jenis' => $jenis ?? 'semua'
-                                  ]) }}" 
-                                  target="_blank" 
-                                  class="btn btn-danger">
-                              <i class="fas fa-file-pdf"></i> Export PDF
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <h3 class="mt-5 pt-4 pl-4 text-primary">Daftar Surat</h3>
         {{-- card --}}
         <div class="card-body">
             <div class="mb-3 d-flex justify-content-between">

@@ -1,7 +1,7 @@
 <div>  
-     <div class="content-wrapper">
-
-        <section class="content-header">
+    <div id="content-wrapper">
+        <div class="bg-white p-4 rounded shadow-sm">
+             <section class="content-header">
         <h3 class="mr-4">
             Welcome 🖐🖐 <span class="text-primary">{{ Auth::user()->name }}</span>
         </h3>
@@ -78,8 +78,8 @@
             </div>
         </section>
 
-
-     </div>
+        </div>
+    </div>
 </div>
 
 <script>
