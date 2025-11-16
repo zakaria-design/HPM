@@ -1,72 +1,76 @@
-      <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href="#" class="brand-link" style="text-decoration: none;">
-      <img src="{{ asset('hpm-logo-2.jpg') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">HPM</span>
-    </a>
-    <div class="sidebar">
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <li class="nav-item">
-            <a wire:navigate href="{{ route('admin.dashboard.index') }}" class="nav-link  @yield('menuAdminDashboard')">
-              <i class="nav-icon fas fa-home"></i>
-              <p>
-                Dashboard
-              </p>
-            </a>
-          </li>
 
-          <li class="nav-item ">
-            <a wire:navigate href="{{ route('admin.inputuser.index') }}" class="nav-link  @yield('menuAdminInputUser')">
-              <i class="nav-icon fas fa-user-plus"></i>
-              <p>
-                Input User
-              </p>
-            </a>
-          </li>
+  
 
-          <li class="nav-item">
-            <a wire:navigate href="{{ route('admin.daftarsurat.index') }}" class="nav-link @yield('menuAdminDaftarSurat')">
-              <i class="nav-icon fas fa-mail-bulk"></i>
-              <p>
-                Daftar Surat
-              </p>
-            </a>
-          </li>
+    <div id="sidebar">
+<div class="d-flex flex-column align-items-center mb-4">
+    <img src="{{ asset('hpm-logo-2.jpg') }}" 
+         class="rounded-circle img-fluid" 
+         style="width: 40px; height: 40px; object-fit: cover;" alt="hppm">
 
-          <li class="nav-item">
-            <a wire:navigate href="{{ route('admin.sphprogres.index') }}" class="nav-link @yield('menuAdminSphProgres')">
-              <i class="nav-icon fas fa-history"></i>
-              <p>
-                Sph In Progres
-              </p>
-            </a>
-          </li>
+    <h5 class="mt-2 hide-when-collapse">HPM</h5>
+</div>
+        <ul class="nav flex-column">
 
-          <li class="nav-item">
-            <a wire:navigate href="{{ route('admin.sphsuccess.index') }}" class="nav-link @yield('menuAdminSphSuccess')">
-              <i class="nav-icon fas fa-check-circle"></i>
-              <p>
-                Sph Success
-              </p>
-            </a>
-          </li>
+            <li class="nav-item">
+                <a wire:navigate 
+                href="{{ route('admin.dashboard.index') }}"
+                class="nav-link text-white d-flex align-items-center menu-link 
+                {{ request()->routeIs('admin.dashboard.*') ? 'active' : '' }}">
+                    <i class='bx bx-home fs-4 me-2'></i>
+                    <span class="hide-when-collapse">Dashboard</span>
+                </a>
+            </li>
 
-          <li class="nav-item">
-            <a wire:navigate href="{{ route('admin.sphgagal.index') }}" class="nav-link @yield('menuAdminSphGagal')">
-              <i class="nav-icon fas fa-times-circle"></i>
-              <p>
-                Sph Gagal
-              </p>
-            </a>
-          </li>
-          
+            <li class="nav-item">
+                <a wire:navigate 
+                href="{{ route('admin.inputuser.index') }}"
+                class="nav-link text-white d-flex align-items-center menu-link 
+                {{ request()->routeIs('admin.inputuser.*') ? 'active' : '' }}">
+                    <i class='bx bx-user fs-4 me-2'></i>
+                    <span class="hide-when-collapse">Input User</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a wire:navigate 
+                href="{{ route('admin.daftarsurat.index') }}"
+                class="nav-link text-white d-flex align-items-center menu-link 
+                {{ request()->routeIs('admin.daftarsurat.*') ? 'active' : '' }}">
+                    <i class='bx  bx-envelope fs-4 me-2'    ></i> 
+                    <span class="hide-when-collapse">Daftar Surat</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a wire:navigate 
+                href="{{ route('admin.sphprogres.index') }}"
+                class="nav-link text-white d-flex align-items-center menu-link 
+                {{ request()->routeIs('admin.sphprogres.*') ? 'active' : '' }}">
+                    <i class='bx  bx-hourglass fs-4 me-2'    ></i> 
+                    <span class="hide-when-collapse">SPH In Progres</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a wire:navigate 
+                href="{{ route('admin.sphsuccess.index') }}"
+                class="nav-link text-white d-flex align-items-center menu-link 
+                {{ request()->routeIs('admin.sphsuccess.*') ? 'active' : '' }}">
+                    <i class='bx  bx-check-circle fs-4 me-2'    ></i> 
+                    <span class="hide-when-collapse">SPH Success</span>
+                </a>
+            </li>
+
+                        <li class="nav-item">
+                <a wire:navigate 
+                href="{{ route('admin.sphgagal.index') }}"
+                class="nav-link text-white d-flex align-items-center menu-link 
+                {{ request()->routeIs('admin.sphgagal.*') ? 'active' : '' }}">
+                    <i class='bx  bx-x-circle fs-4 me-2'    ></i> 
+                    <span class="hide-when-collapse">SPH Gagal</span>
+                </a>
+            </li>
 
         </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
     </div>
-    <!-- /.sidebar -->
-  </aside>
+

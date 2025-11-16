@@ -1,25 +1,12 @@
 <div>
-     <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1 class="text-primary"><i class="fas fa-times-circle"></i> @yield('title')</h1>
-                </div>
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="#"><i class="fas fa-user-lock"></i> Admin</a></li>
-                    <li class="breadcrumb-item active"><i class="fas fa-times-circle"></i> @yield('title')</li>
-                    </ol>
-                </div>
-                </div>
-            </div>
-        </section>
+     <div id="content-wrapper">
 
         <section class="content-header">
             <div>
-                <div class="d-flex justify-content-between mb-3">
+            <div class="mt-5 pt-2 mb-2 pl-4">
+                <h3 class="text-primary">SPH Gagal</h3>
+            </div>
+                <div class="d-flex justify-content-between mb-3 pl-4">
                     <input wire:model.live="search" type="text" class="form-control w-25" placeholder="Cari Customer...">
                 </div>
                 <div class="table-responsive">

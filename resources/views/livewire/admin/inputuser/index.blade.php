@@ -1,5 +1,5 @@
 <div>
-    <div class="content-wrapper">
+    <div id="content-wrapper">
 
         <section class="content-header">
             <div class="container-fluid">
@@ -17,13 +17,12 @@
             </div>
         </section>
 
-        <section class="content-header">
+
             <div>
-                    <div class="card-header mb-4">
-                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#userModal">
-                         <i class="fas fa-plus mr-1 "></i> Tambah User
-                        </button>
-                    </div>
+            <button type="button" class="btn btn-primary btn-sm ml-2" data-toggle="modal" data-target="#userModal">
+                <i class="fas fa-user-plus"></i> Tambah User
+            </button>
+
                 
                     <div class="table-responsive">
                         <table class="table table-hover align-middle text-nowrap data-table">

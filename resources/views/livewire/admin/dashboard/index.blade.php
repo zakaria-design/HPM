@@ -1,6 +1,6 @@
 <div>
     
-      <div class="content-wrapper">
+      <div id="content-wrapper">
 
         <section class="content-header">
             <h3 class="mr-4">
@@ -8,7 +8,7 @@
             </h3>
 
             <div class="container my-4">
-                <div class="row g-3">
+                <div class="row g-3 pt-2">
 
                 <!-- Card 1 -->
                 <div class="col-12 col-sm-6 col-md-3">
@@ -68,7 +68,7 @@
 
             <section class="content-header">
             <div>
-                <div class="d-flex justify-content-between mb-3">
+                <div class="d-flex justify-content-between mb-3 pl-4">
                     <h5>Daftar Pengajuan Hari ini </h5>
                 </div>
                 <div class="table-responsive">
