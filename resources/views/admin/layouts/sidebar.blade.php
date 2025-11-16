@@ -2,12 +2,13 @@
   
 
     <div id="sidebar">
-<div class="d-flex flex-column align-items-center mb-4">
+<div class="d-flex align-items-center mb-4">
     <img src="{{ asset('hpm-logo-2.jpg') }}" 
-         class="rounded-circle img-fluid" 
-         style="width: 40px; height: 40px; object-fit: cover;" alt="hppm">
+        class="rounded-circle img-fluid" 
+        style="width: 40px; height: 40px; object-fit: cover;" 
+        alt="hppm">
 
-    <h5 class="mt-2 hide-when-collapse">HPM</h5>
+    <h5 class="ml-2 hide-when-collapse" style="margin-top: 7px;">HPM</h5>
 </div>
         <ul class="nav flex-column">
 
@@ -17,7 +18,7 @@
                 class="nav-link text-white d-flex align-items-center menu-link 
                 {{ request()->routeIs('admin.dashboard.*') ? 'active' : '' }}">
                     <i class='bx bx-home fs-4 me-2'></i>
-                    <span class="hide-when-collapse">Dashboard</span>
+                    <span class="hide-when-collapse" style="opacity: 0.8;">Dashboard</span>
                 </a>
             </li>
 
@@ -27,7 +28,7 @@
                 class="nav-link text-white d-flex align-items-center menu-link 
                 {{ request()->routeIs('admin.inputuser.*') ? 'active' : '' }}">
                     <i class='bx bx-user fs-4 me-2'></i>
-                    <span class="hide-when-collapse">Input User</span>
+                    <span class="hide-when-collapse" style="opacity: 0.8;">Input User</span>
                 </a>
             </li>
 
@@ -37,7 +38,7 @@
                 class="nav-link text-white d-flex align-items-center menu-link 
                 {{ request()->routeIs('admin.daftarsurat.*') ? 'active' : '' }}">
                     <i class='bx  bx-envelope fs-4 me-2'    ></i> 
-                    <span class="hide-when-collapse">Daftar Surat</span>
+                    <span class="hide-when-collapse" style="opacity: 0.8;">Daftar Surat</span>
                 </a>
             </li>
 
@@ -47,7 +48,7 @@
                 class="nav-link text-white d-flex align-items-center menu-link 
                 {{ request()->routeIs('admin.sphprogres.*') ? 'active' : '' }}">
                     <i class='bx  bx-hourglass fs-4 me-2'    ></i> 
-                    <span class="hide-when-collapse">SPH In Progres</span>
+                    <span class="hide-when-collapse" style="opacity: 0.8;">SPH In Progres</span>
                 </a>
             </li>
 
@@ -57,7 +58,7 @@
                 class="nav-link text-white d-flex align-items-center menu-link 
                 {{ request()->routeIs('admin.sphsuccess.*') ? 'active' : '' }}">
                     <i class='bx  bx-check-circle fs-4 me-2'    ></i> 
-                    <span class="hide-when-collapse">SPH Success</span>
+                    <span class="hide-when-collapse" style="opacity: 0.8;">SPH Success</span>
                 </a>
             </li>
 
@@ -67,7 +68,7 @@
                 class="nav-link text-white d-flex align-items-center menu-link 
                 {{ request()->routeIs('admin.sphgagal.*') ? 'active' : '' }}">
                     <i class='bx  bx-x-circle fs-4 me-2'    ></i> 
-                    <span class="hide-when-collapse">SPH Gagal</span>
+                    <span class="hide-when-collapse" style="opacity: 0.8;">SPH Gagal</span>
                 </a>
             </li>
 

@@ -53,7 +53,6 @@
                         <label>Role</label>
                         <select class="form-control @error('role') is-invalid @enderror" wire:model.defer="role">
                             <option value="">-- Pilih Role --</option>
-                            <option value="karyawan">Karyawan</option>
                             <option value="manager">Manager</option>
                         </select>
                         @error('role') 

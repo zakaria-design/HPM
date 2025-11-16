@@ -1,5 +1,5 @@
 <!-- Modal -->
-    <div wire:ignore.self class="modal fade" id="pengajuanModal" tabindex="-1" role="dialog" aria-labelledby="pengajuanModalLabel" aria-hidden="true">
+    <div wire:ignore.self class="modal fade" style="margin-top: 100px;" id="pengajuanModal" tabindex="-1" role="dialog" aria-labelledby="pengajuanModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-primary text-white">

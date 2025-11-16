@@ -20,7 +20,7 @@
     {{-- Tombol Kembali --}}
     <div class="mb-6">
         @php
-            $role = Auth::user()->role ?? 'karyawan'; // default karyawan jika role kosong
+            $role = Auth::user()->role ?? 'manager'; // default karyawan jika role kosong
             switch($role) {
                 case 'admin':
                     $dashboardRoute = route('admin.dashboard.index');
@@ -29,7 +29,7 @@
                     $dashboardRoute = route('pimpinan.dashboard.index');
                     break;
                 default:
-                    $dashboardRoute = route('karyawan.dashboard.index');
+                    $dashboardRoute = route('manager.dashboard.index');
             }
         @endphp
 

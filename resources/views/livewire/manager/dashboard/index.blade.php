@@ -1,8 +1,8 @@
 <div>
     
-    <div class="content-wrapper">
-        <section class="content-header">
-            <h3 class="mr-4">Selamat datang 🖐🖐 <span class="text-primary">{{ Auth::user()->name }}</span> </h3>
+    <div id="content-wrapper">
+        <section class="content-header pt-0 mt-0 pt-md-5 mt-md-5">
+            <h3 class="pl-3">Selamat datang 🖐🖐 <span class="text-primary">{{ Auth::user()->name }}</span> </h3>
             <div class="container my-4">
             <div class="row g-3">
                 <!-- Card 1 -->

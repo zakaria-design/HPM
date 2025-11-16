@@ -1,11 +1,11 @@
 <div>
     
-      <div id="content-wrapper">
+      <div id="content-wrapper" class="mb-5">
 
-        <section class="content-header">
-            <h3 class="mr-4">
-                Welcome 🖐🖐 <span class="text-primary">{{ Auth::user()->name }}</span>
-            </h3>
+        <section class="content-header pt-0 mt-0 pt-md-5 mt-md-5">
+            <h4 class="pl-3">
+                Selamat Datang 🖐🖐 <span class="text-primary">{{ Auth::user()->name }}</span>
+            </h4>
 
             <div class="container my-4">
                 <div class="row g-3 pt-2">

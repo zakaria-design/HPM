@@ -1,11 +1,11 @@
 <div>
     <div id="content-wrapper">
 
-        <section class="content-header">
+        <section class="content-header pt-0 mt-0 pt-md-5 mt-md-5">
             <div class="container-fluid">
                 <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="text-primary"><i class=" fas fa-user-plus"></i> @yield('title')</h1>
+                    <h4 class="text-primary"><i class=" fas fa-user-plus"></i> @yield('title')</h4>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
@@ -19,7 +19,7 @@
 
 
             <div>
-            <button type="button" class="btn btn-primary btn-sm ml-2" data-toggle="modal" data-target="#userModal">
+            <button type="button" class="btn btn-primary btn-sm ml-2 mb-4" data-toggle="modal" data-target="#userModal">
                 <i class="fas fa-user-plus"></i> Tambah User
             </button>
 

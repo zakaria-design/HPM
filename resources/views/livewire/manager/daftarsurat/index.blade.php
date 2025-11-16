@@ -1,11 +1,11 @@
 <div>
-<div class="content-wrapper">
+<div id="content-wrapper">
     <!-- Content Header (Page header) -->
-  <section class="content-header">
+  <section class="content-header pt-0 mt-0 pt-md-5 mt-md-5">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="text-primary"><i class=" fas fa-mail-bulk"></i> @yield('title')</h1>
+            <h3 class="text-primary"><i class=" fas fa-mail-bulk"></i> @yield('title')</h3>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -23,25 +23,7 @@
       <!-- Default box -->
       <div>
         <div>
-            <div class="d-flex justify-content-end">
-                <div class="btn-group dropleft">
-                    <button type="button" class="btn btn-sm btn-warning dropdown-toggle mb-4" data-toggle="dropdown" aria-expanded="false">
-                      <i class="fas fa-print mr-1"></i>  Cetak
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item text-success" href="#"><i class="fas fa-file-excel mr-1"></i> Excel</a>
-                        <a class="dropdown-item text-danger" href="{{ route('daftarsurat.exportPdf', [
-                                'search' => $search ?? '',
-                                'kategori' => $kategori ?? 'semua',
-                                'jenis' => $jenis ?? 'semua'
-                                  ]) }}" 
-                                  target="_blank" 
-                                  class="btn btn-danger">
-                              <i class="fas fa-file-pdf"></i> Export PDF
-                        </a>
-                    </div>
-                </div>
-            </div>
+
         </div>
         {{-- card --}}
         <div class="card-body">

@@ -1,10 +1,12 @@
 <div>  
-    <div id="content-wrapper">
-        <div class="bg-white p-4 rounded shadow-sm">
-             <section class="content-header">
-        <h3 class="mr-4">
-            Welcome 🖐🖐 <span class="text-primary">{{ Auth::user()->name }}</span>
-        </h3>
+    <div id="content-wrapper" class="mb-5">
+        <section class="content-header pt-0 mt-0 pt-md-5 mt-md-5">
+            <div class="bg-white p-4 rounded shadow-sm">
+                <section class="content-header">
+            <h4 class="mr-4 pl-2">
+                Welcome 🖐🖐 <span class="text-primary">{{ Auth::user()->name }}</span>
+            </h4>
+        </section>
 
         <div class="container my-4">
             <div class="row g-3">

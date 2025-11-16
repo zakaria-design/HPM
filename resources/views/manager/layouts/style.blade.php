@@ -5,10 +5,8 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('adminlte3/dist/css/adminlte.min.css') }}"> --}}
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-{{-- link card --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+{{-- link card --}} --}}
 <style>
   .stat-card {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -21,10 +19,10 @@
   }
 </style>
 {{-- link menu active --}}
-<style>
+{{-- <style>
     .nav-link.active {
     background-color: #f59d19 !important; /* hijau */
     color: #fff !important;
     }
-</style>
+</style> --}}
 
